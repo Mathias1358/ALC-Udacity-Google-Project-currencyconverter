@@ -1,0 +1,233 @@
+/* color */
+.blue {
+  background: #0277bd !important;
+}
+
+/* reset browser default */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+        background: #c4fff6;
+        color: #003;    
+        font-weight: bold;
+        font-family: 'Inconsolata', Monaco, Consolas, 'Andale Mono', monospace;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+    }
+/* header area */
+    .header{
+        color: #d42f2f;
+        padding: 4px;
+        width: 70%;
+        position: absolute;
+        left: 10%;
+        top: 8%;
+        font-size: 5vmax;
+		
+        text-align: center;
+    }
+    .header span{
+        font-size: 1.3rem;
+        text-align: left;
+        margin-left: -18%;
+        color: #000 ;
+        border-radius: 5px;
+    }
+    .notification{
+        color: #ff5722 ;
+        padding: 10px;
+        width: 60%;
+        position: absolute;
+        left: 19%;
+        top: 31%;
+        font-size: 1.1rem;
+        text-align: center;    
+    }
+
+/* forms (buttons, input and select) */
+    form{
+        padding: 10px;
+        width: 70%;
+        position: absolute;
+        left: 25%;
+        top: 35%;   
+        background: transparent !important;
+    }
+    button.digit{
+      margin-bottom: 4px;
+      width: 10%;
+      background: cadetblue !important;
+      padding: 10px;
+    }
+    button.digit.blue{
+      background: #01579b !important;
+    }
+    button.digit:hover{
+      background: rgba(110, 0, 0, 0.9) !important;
+    }
+        
+    button, .nextBtn{
+        background: rgba(0, 128, 192, 0.9) !important;
+        border: none;
+        color: #fff;
+        width: 13%;
+        height: 32px;
+        padding: 10px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    button:hover{
+        background: #0277bd !important;
+    }
+    .nextBtn {
+        background: #fff !important;
+        color:  rgba(256, 0, 0, 0.9);
+    }
+    button:hover .nextBtn:hover, .nextBtn:hover {
+        background:  rgba(256, 0, 0, 0.9) !important;
+        color: #fff !important; 
+    }
+    input, select{
+        height: 30px;
+        width: 10vmax;
+        padding: 10px;
+        border: 1px solid #01579b;
+        background: #fff !important; 
+        text-transform: uppercase;
+    }
+select{
+  cursor: pointer;
+}
+    /* output and input display */
+.inputDigit, .outputDigit{
+  top: 10vmax;
+  padding: 0px;
+  width: 40%;
+  left: 27%;
+  position: sticky;
+  min-height: 14vmax;
+  float: left;
+}
+.outputDigit{
+  left: 0;
+  background: #263238;
+  color: #fff;
+  width: 23.6%;
+  left: 1vmax;
+  min-height: 12.4vmax;
+}
+
+.outputDigit .exchangeRate, .outputDigit .calculateorOutput, .outputDigit .calculateorInput{
+  font-size: 3.3vmax;
+  word-wrap: break-word;
+  background: transparent;
+  color: skyblue;
+  text-align: center;
+  height: 9vmax;
+}
+.exchangeRate{
+  font-size: 5.5vmax;
+  text-align: center;
+}
+.outputDigit .exchangeRate::before{
+  content: "exchange rate";
+  color: saddlebrown;
+  top: -0.1vmax;
+  left: 1px;
+  font-size: 1.5vmax;
+  position: absolute;
+}
+.outputDigit .calculateorOutput{
+  font-size: 3vmax;
+  height: 7vmax;
+  color: #eee;
+  background: #eb6137 !important;
+}
+.outputDigit .calculateorInput{
+  font-size: 2vmax;
+  height: 4vmax;
+  color: #fff;
+  background: #3c85bd !important;
+}
+
+/* screens */
+@media screen and (max-width: 800px){
+  .inputDigit, .outputDigit{
+    display: none;
+    top: 10vmax;
+    left: 23vmax;
+  }
+  .outputDigit{
+    top: 10vmax;
+    left: 1vmax;
+  }
+}
+  @media screen and (max-width: 700px){
+  .inputDigit{
+    display: none;
+  }
+  .outputDigit{
+    width: 67%;
+  }
+  emptya{    display: block;
+    width: 10px;
+  }
+  .header {
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    left: 1%;
+  }
+  .header span{
+    display: block;
+    margin-top: -16px;
+    margin-left: 61%;
+  }
+  form, .list{
+    width: 80%;
+    position: absolute;
+    left: 20%;   
+  }
+}
+@media screen and (max-width: 600px){
+  .outputDigit{
+    width: 67%;
+    top: 13vmax;
+    left: 2vmax;
+  }
+  .header {
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    left: 1%;
+  }
+}
+@media screen and (max-width: 400px){
+  empty{    display: block;
+    width: 10px;
+  }
+  input, select{
+    width: 13vmax;
+  }
+  form, .list{
+    width: 100%;
+    position: absolute;
+    left: 0%;   
+  }
+  button{
+    width: 87%;
+    margin-top: 10px;
+  }
+  .outputDigit{
+    width: 81.5%;
+    top: 23vmax;
+  }
+  .header span{
+    display: block;
+    margin-top: -16px;
+    margin-left: 27%;
+  }
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title> CurrencyConverter by zealmat for ALC</title>
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
+    <link rel="stylesheet" href="css/currency.css"/>
+  </head>
+<body>
+  <div class="formContainer">
+    <div class="header">
+        Currency<empty></empty>Converter<span></span>
+    </div>
+    <div class="notification"></div>
+    <form>
+      <input id="amountInput" placeholder="enter amount here"/>
+      <select id="currencyFrom" class="select">
+          <option> convert From </option>
+      </select>
+      <select id="currencyTo" class="select">
+          <option> convert to </option>
+      </select>
+      <button type="button" id="userSubmit">convert</button>
+      <div class="exchangeRate"></div>
+      
+      <div class="inputDigit" style="display: none;">
+          <button type="button" class="digit one">1</button>
+          <button type="button" class="digit two">2</button>
+          <button type="button" class="digit three">3</button>
+          <button type="button" class="digit four">4</button>
+          <button type="button" class="digit five">5</button>
+          <button type="button" class="digit six">6</button>
+          <button type="button" class="digit seven">7</button>
+          <button type="button" class="digit eight">8</button>
+          <button type="button" class="digit nine">9</button>
+          <button type="button" class="digit zero">10</button>
+          <button type="button" class="digit dot">.</button>
+          <button type="button" class="digit multi">x</button>
+          <button type="button" style="width: 45%;">calculator</button>
+      </div>
+      <div class="outputDigit" style="display: none;">
+        <div class="calculateorOutput"></div>
+        <div class="calculateorInput"></div>
+          
+      </div>
+    </form>            
+        </div>
+    <script src="js/currency.js"></script>
+</body>
+</html>
